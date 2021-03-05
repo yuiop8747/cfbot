@@ -7,7 +7,6 @@ rtm.start();
 
 rtm.on("message", async (message) => {
   var text = message.text;
-  console.log(message);
   if (text.includes("코포시간")) {
     let data = await getCfInfo();
     data.shift();
